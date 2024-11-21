@@ -1,0 +1,264 @@
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    margin-top: 30px;
+}
+
+.imagen-producto img {
+    width: 400px;
+    height: auto;
+    margin: 1px solid black;
+}
+
+.detalles-producto {
+    margin-left: 20px;
+    width: 400px;
+}
+
+.detalles-producto h1 {
+    font-size: 24px;
+}
+
+.detalles-producto .precio {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.talles, .colores {
+    margin: 10px 0;
+}
+
+.talles span, .colores span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.talles button, .colores button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.boton-talle.seleccionado, .boton-color.seleccionado {
+    box-shadow: inset 0 0 0 2px #d0ff00;
+    border: 2px solid #d0ff00;
+    background-color: rgba(208, 255, 0, 0.2);
+}
+
+
+.colores button {
+    width: 115px;
+    height: 30px;
+    text-align: center;
+}
+
+/*.colores .blanco {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.colores .negro {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.colores .gris {
+    background-color: gray;
+    border: 1px solid black;
+}
+*/
+.agregar-al-carrito {
+    background-color: #d0ff00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.descripcion h2 {
+    margin-top: 20px;
+}
+
+.descripcion p {
+    margin: 15px 0;
+}
+
+.contenedor-botones-tarjeta {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.contenedor-botones-tarjeta button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+}
+
+.contador-favorito,
+.contador-carrito {
+    font-size: 10px;
+    position: absolute;
+    background-color: orange;
+    color: #000;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.favorito {
+    position: relative;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.favorito.activo {
+    color: red;
+}
+
+.favorito i {
+    display: none;
+}
+
+.favorito .fa-regular {
+    display: inline;
+}
+
+.favorito.activo .fa-regular {
+    display: none;
+}
+
+.favorito.activo .fa-solid {
+    display: inline;
+}
+
+.pie-tarjeta-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.precio {
+    font-weight: 700;
+    font-size: 24px;
+    color: #555;
+}
+
+.pestañas {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.botón-pestaña {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.botón-pestaña.activo {
+    font-weight: bold;
+}
+
+.línea-pestaña {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 33.33%;
+    height: 3px;
+    background-color: black;
+    transition: left 0.3s;
+}
+
+.contenido-pestaña {
+    display: none;
+    background-color: white;
+    padding: 20px;
+}
+
+.contenido-pestaña.activo {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/*ACA ARRANCA LOS CAMBIOS DE COLOR*/
+.boton-color {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+.boton-color:hover {
+    transform: scale(1.1);
+}
+
+.boton-color.negro {
+    background-color: black;
+    color: black;
+}
+
+.boton-color.blanco {
+    background-color: white;
+    color: white;
+    border: 1px solid black;
+}
+
+.boton-color.gris {
+    background-color: gray;
+    color:gray;
+}
+
+.boton-color.beige {
+    background-color: rgb(249, 192, 87);
+    color:rgb(249, 192, 87);
+}
+
+.boton-color.rojo {
+    background-color: red;
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
