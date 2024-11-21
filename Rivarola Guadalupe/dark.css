@@ -1,0 +1,156 @@
+:root {
+    --color-black: #212121;
+    --color-white: #FFF;
+    --color-grey: #d4d4d4;
+    }
+
+    
+
+    body {
+    color: var(--color-black); 
+    background-color: var(--color-white);
+    }
+
+    .toggle-theme {
+    margin: 10px 10px 10px 10px;
+    }
+
+
+    body.dark {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    }
+
+
+    .toggle-theme .label {
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 26px;
+    background-color: var(--color-black);
+    border-radius: 50px;
+    padding: 2px;
+    position: relative;
+    }
+
+    body.dark .toggle-theme .label {
+    background-color: var(--color-white);
+    }
+
+    .toggle-theme .checkbox {
+    display: none;
+    }
+
+    .toggle-theme .label i {
+    color: var(--color-white);
+    }
+
+    body.dark .toggle-theme .label i {
+    color: var(--color-black);
+    }
+
+
+    .toggle-theme .label .bi-sun-fill {
+    margin-left: 8px;  /* Ajusta el margen izquierdo para darle más espacio al icono del sol */
+    margin-right: 5px; /* Puedes mantener o ajustar el margen derecho según lo necesites */
+    }
+
+    .toggle-theme .label .bi-moon-fill {
+    margin-left: 16px;  /*Ajusta la separación del icono de luna */
+    margin-right: 5px; /* Puedes mantener o ajustar el margen derecho según lo necesites */
+
+    }
+
+    .toggle-theme .label .bi-circle-fill {
+    position: absolute;
+    background-color: var(--color-white);
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+    /* Asegura que el círculo esté por encima de los iconos */
+    }
+
+    body.dark .toggle-theme .label .bi-circle-fill {
+    background-color: var(--color-black);
+    }
+
+    .toggle-theme .checkbox:checked + .label .bi-circle-fill {
+    transform: translateX(38px); /* Ajusta la distancia para centrar el círculo sobre el icono */
+    }
+
+
+
+
+
+    /* Estilos por defecto */
+.secciones {
+    background-color: var(--color-grey); /* Fondo claro */
+    color: var(--color-black);           /* Texto oscuro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para modo oscuro */
+
+body.dark .secciones a {
+    color: var(--color-white);           /* Texto claro */
+}
+
+body.dark .secciones {
+    background-color: var(--color-black); /* Fondo oscuro */
+    color: var(--color-white);           /* Texto claro */
+}
+
+body.card{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+body.dark .card {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.5); /* Aplicar sombra personalizada */
+}
+
+body.dark .card a{
+    background-color: var(--color-grey);
+    color: var(--color-black);
+}
+
+
+.barra .pestañas button{
+    background-color: transparent !important;
+    color: var(--color-black) !important; 
+}
+
+body.dark .pestañas button{
+    color: var(--color-white) !important; 
+}
+
+
+body.dark .línea-pestaña {
+    background-color: var(--color-white); /* Cambia a blanco en modo oscuro */
+}
+
+.contenido-pestaña{
+    background-color: transparent;
+}
+
+.body.dark .contenido-pestaña{
+    background-color: transparent;
+}
+
+body.dark .precio{
+    color:white;
+}
+
+.contenedorTabla h2{
+    color: black
+}
+
+body.dark .contenedorTabla h2{
+    color: #FFF;
+}
