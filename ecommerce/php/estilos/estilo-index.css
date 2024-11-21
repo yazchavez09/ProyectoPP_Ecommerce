@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex; /* Añadido para centrar el contenido */
+    flex-direction: column; /* Añadido para centrar el contenido */
+    align-items: center; /* Añadido para centrar el contenido */
+}
+
+header {
+    width: 100%; /* Añadido para que el header ocupe todo el ancho */
+}
+
+.cajaTitulito {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+nav {
+    background-color: #C4FF0D;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Para centrar el form */
+    height: 75px;
+    width: 100%; /* Añadido para que el nav ocupe todo el ancho */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-left: 200px;
+}
+
+nav ul li {
+    margin-right: 90px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: #d7d7d7;
+    padding: 8px 20px;
+}
+
+.search-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    width: 600px; /* Ajustar el ancho según sea necesario */
+    height: 45px;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.barra {
+    background-color: rgb(218, 218, 218);
+    padding: 1px;
+}
+
+.barra ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.barra ul li {
+    display: inline;
+    margin: 0px 40px;
+    font-size: 18px;
+}
+
+.barra ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.secciones {
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+}
+
+.secciones ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.secciones ul li {
+    display: inline;
+    margin: 0px 40px;
+    font-size: 18px;
+}
+
+.secciones ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.todo {
+    width: 100%; /* Añadido para que el main ocupe todo el ancho */
+    display: flex; /* Añadido para centrar el contenido */
+    flex-direction: column; /* Añadido para centrar el contenido */
+    align-items: center; /* Añadido para centrar el contenido */
+}
+
+.todo h1 {
+    text-align: center;
+    font-weight: 100;
+    margin: 40px 0;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 18%;
+    height: 650px;
+    background-color: #f0f0f0;
+    text-align: left;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .foto {
+    width: 100%;
+    height: 420px;
+}
+
+.card .foto img {
+    width: 100%;
+    height: 100%; /* Ajustado para que la imagen ocupe todo el contenedor */
+}
+
+.card h2 {
+    margin: 12px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.card .desde {
+    margin: 8px 12px;
+    font-weight: 400;
+}
+
+.card .titulo-secciones {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    margin-top: 65px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.card .titulo-secciones a {
+    color: white;
+    text-decoration: none;
+}
+
+.card .titulo-secciones:hover {
+    background-color: #353535;
+}
+
+@media (max-width: 768px) {
+    .cajaTitulito {
+        font-size: 11px;
+    }
+
+    .secciones ul li {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 45%;
+        height: auto;
+    }
+
+    .search-form input[type="text"] {
+        width: 80%; /* Ajustado para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .cajaTitulito {
+        font-size: 10px;
+    }
+
+    .secciones ul {
+        padding: 0;
+    }
+
+    .secciones ul li {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin: 5px auto;
+    }
+
+    .search-form input[type="text"] {
+        width: 70%; /* Ajustado para pantallas más pequeñas */
+    }
+}
+
+
+
+/* Mostrar menú en pantallas pequeñas */
+@media (max-width: 600px) {
+    .secciones.activo {
+        display: block;
+    }
+
+    .nav-left ul {
+        display: none;
+    }
+
+    .nav-right {
+        flex-direction: column;
+    }
+}
